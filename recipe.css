@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    color: #404040;
+    font-family: Georgia, Garamond, serif;
+    font-size: 11pt;
+}
+
+h1, h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18pt;
+    text-align: left;
+}
+
+ul, ol {
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+}
+
+a {
+    color: #A4A400;
+}
+
+.user-comment {
+    background-color: #FFFFA8;
+    padding: 10px;
+    margin: 10px 0;
+    font-style: italic;
+}

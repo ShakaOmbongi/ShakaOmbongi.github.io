@@ -1,4 +1,4 @@
-/*  page styles */
+/*  Page Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,7 +18,7 @@ body {
     margin: 0 auto;
   }
   
-  /* Nav styles */
+  /* Nav Styles */
   nav ul {
     list-style-type: none;
     display: flex;
@@ -30,7 +30,13 @@ body {
     text-decoration: none;
   }
   
-  /* Button */
+  .card-img-top {
+    max-height: 250px !important;  
+    width: 100% !important;        
+    object-fit: cover !important;   
+  }
+  
+  /* Button Styles */
   .btn, button {
     background-color: #3498db;
     color: #fff;
@@ -39,19 +45,25 @@ body {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .btn:hover, button:hover {
     background-color: #2980b9;
   }
   
-  /* style  button effect */
+  /* Pressed Button */
   .pressed {
-    background-color: #1c6390;
+    background-color: #1c6390 !important; 
   }
   
-  /* style for splash and search  */
+  /* Add to Cart Buttons */
+  .added {
+    background-color: #2ecc71 !important; 
+    transform: scale(1.05);
+  }
+  
+
   #splash {
     padding: 40px 0;
     text-align: center;

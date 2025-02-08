@@ -1,14 +1,20 @@
+/* 1. pages style */
 body {
-    background-color: white;
-    color: #404040;
     font-family: Georgia, Garamond, serif;
-    font-size: 11pt;
+    background-color: #ffffff;
+    color: #404040;
+    margin: 0;
+    padding: 20px;
+    background-image: url('/granny/img/silverware.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #A4A400;
     background-color: #F0F0F0;
-    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
     text-decoration: underline;
 }
 
@@ -20,22 +26,73 @@ h1 {
 
 h2 {
     font-size: 18pt;
+    font-weight: normal;
     text-align: left;
-}
-
-ul, ol {
-    text-align: left;
-    max-width: 500px;
-    margin: auto;
 }
 
 a {
     color: #A4A400;
+    text-decoration: none;
 }
 
-.user-comment {
+a:hover {
+    text-decoration: underline;
+}
+
+
+.pie-image {
+    flex: 0 0 150px;
+    text-align: left;
+    margin-left: 2=px;
+}
+
+.pie-image img {
+    width: 20%;
+    height: auto;
+    border: 1px solid #A4A400;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+ul li::marker {
+    content: url('images/pie_icon.gif');
+}
+
+blockquote.user-quote {
     background-color: #FFFFA8;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-left: 5px solid #A4A400;
     font-style: italic;
+}
+
+blockquote.user-quote em {
+    font-style: italic;
+}
+
+blockquote.user-quote strong {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #A4A400;
+    border-radius: 5px;
+}
+
+footer pre {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #404040;
+    margin-top: 40px;
 }

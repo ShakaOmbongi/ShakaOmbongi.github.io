@@ -1,6 +1,5 @@
 # ShakaOmbongi.github.io
 
-Project 1
 Granny's Pies Recipe Website
 Description
 A delightful collection of delicious pie recipes, featuring an easy-to-follow lemon meringue pie recipe. Users can leave comments and enjoy funny pie-related jokes.
@@ -9,12 +8,6 @@ Features
 User comments section
 Links to other pie recipes
 Monospace footer with copyright information
-
-Project 2
-Douillet Lounge Wear website
-Douillet Lounge Wear is a static web prototype for an online loungewear store. The name Douillet comes from the French word for comfortable, perfectly describing the brand. stylish clothing designed for cozy, relaxed living.
-
-
 
 Installation
 Clone the repository:

@@ -1,28 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web development Projects</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShakaOmbongi Projects</title>
+  <!-- Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <!--  quick css styling -->
+  <style>
+    /* quick styling */
+    body {
+      background-color: #f7f7f7;
+    }
+    /* Hero Section Styling */
+    .hero {
+      background: url('images/hero-background.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      color: #fff;
+      padding: 100px 0;
+    }
+    /*  darken the hero image */
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 100px 0;
+    }
+    /* Hover Effect */
+    .project-card {
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
+  <!-- Header with Navigation -->
   <header>
-    <h1>Welcome to My Projects</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">ShakaOmbongi Projects</a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main>
-    <p>Select a project to view:</p>
-    <ul>
-      <li>
-        <a href="/granny/views/index.html">Granny's Pies Recipe Website</a>
-      </li>
-      <li>
-        <a href="/372OnlineStore/views/index.html">Douillet Lounge Wear</a>
-      </li>
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; 2025 ShakaOmbongi</p>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="container text-center">
+        <h1 class="display-4">Welcome to My Projects</h1>
+        <p class="lead">Explore my web devlopment growth.</p>
+        <a href="#projects" class="btn btn-primary btn-lg mt-3">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">My Projects</h2>
+      <div class="row">
+        <!-- Granny's Pies Project Card -->
+        <div class="col-md-6 mb-4">
+          <div class="card project-card h-100">
+            <img src="/granny/img/grannylogo.jpg" class="card-img-top" alt="Granny's Pies Recipe Website" />
+            <div class="card-body">
+              <h5 class="card-title">Granny's Pies Recipe Website</h5>
+              <p class="card-text">A delightful collection of pie recipes with user comments and humorous touches.</p>
+              <a href="/granny/views/index.html" class="btn btn-outline-primary">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- Douillet Lounge Wear Project Card -->
+        <div class="col-md-6 mb-4">
+          <div class="card project-card h-100">
+            <img src="/372OnlineStore/images/logo.jpg" class="card-img-top" alt="Douillet Lounge Wear" />
+            <div class="card-body">
+              <h5 class="card-title">Douillet Lounge Wear</h5>
+              <p class="card-text">A stylish online store offering comfortable, modern loungewear.</p>
+              <a href="/372OnlineStore/views/index.html" class="btn btn-outline-primary">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 ShakaOmbongi</p>
+    </div>
   </footer>
+
+  <!-- MDB JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,80 @@
+/**
+ * Author: Shaka Ombongi 2/18
+ * Description: CSS for the Campus Food & Drink Recommendations page.
+ */
+
+ body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+#introduction article p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+}
+
+.establishment {
+  border: 1px solid #ccc;
+  margin: 2em auto;
+  padding: 1em;
+  max-width: 800px;
+  background-color: #fff;
+}
+
+.establishment header h2 {
+  margin-top: 0;
+}
+
+.dishes {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Dish image styling */
+.dish-image {
+  cursor: pointer;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.dish-image:hover {
+  transform: scale(1.05);
+}
+
+/* Optionally, style the "selected" class */
+.selected {
+  border: 3px solid #007bff;
+}
+
+/* Dish description container */
+#dish-description-container {
+  margin: 2em auto;
+  padding: 1em;
+  border: 1px solid #333;
+  max-width: 800px;
+}

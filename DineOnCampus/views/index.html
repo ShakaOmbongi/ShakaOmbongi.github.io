@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Author: Shaka Ombongi 2/18
+    Description: This page displays Campus Food & Drink Recommendations.
+    Users can click on dish images (with class "dish-image") to see dish details,
+    which are shown in the dish description container.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Food & Drink Recommendations</title>
+  <!-- MDB UI Kit CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/DineOnCampus/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Campus Food & Drink Recommendations</h1>
+    <nav>
+      <ul>
+        <li><a href="mealplan.html">Create a Meal Plan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Introduction Section -->
+    <section id="introduction">
+      <article>
+        <p>
+          Are you a culinary adventurer in search of the perfect meal on campus? Look no further! We have curated a list of the most exceptional food establishments near Petty building, each offering unique flavors to satisfy every craving. Whether you're in the mood for hearty chicken dishes, bold and spicy wings, or healthy, refreshing bowls, our guide has you covered. Explore our recommendations and discover hidden gems on campus, complete with detailed menus and insider tips. Get ready to embark on a delicious journey!
+        </p>
+      </article>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+      <!-- Chickfla -->
+      <article class="establishment">
+        <header>
+          <h2>Chickfla</h2>
+          <p><strong>Location & Hours:</strong> EUC | 7:00 AM – 8:00 PM</p>
+        </header>
+        <p>Chickfla offers delicious, freshly prepared chicken dishes with a campus twist, perfect for a hearty meal on the go.</p>
+        <div class="dishes">
+          <!-- Note: These images use the class "dish-image" so that main.js can attach events -->
+          <img src="/DineOnCampus/images/CrispyChickenSandwich.jpeg" alt="Crispy Chicken Sandwich"
+               class="dish-image" 
+               data-dish="Crispy Chicken Sandwich" 
+               data-cost="8.50" 
+               data-description="Crispy Chicken Sandwich: Juicy chicken fillet with fresh lettuce and spicy mayo. Price: $8.50" />
+          <img src="/DineOnCampus/images/SpicyChickenWings.jpeg" alt="Spicy Chicken Wings"
+               class="dish-image" 
+               data-dish="Spicy Chicken Wings" 
+               data-cost="7.00" 
+               data-description="Spicy Chicken Wings: Wings tossed in a fiery sauce, served with blue cheese dressing. Price: $7.00" />
+          <img src="/DineOnCampus/images/ButtermilkBiscuits.jpeg" alt="Buttermilk Biscuits"
+               class="dish-image" 
+               data-dish="Buttermilk Biscuits" 
+               data-cost="4.00" 
+               data-description="Buttermilk Biscuits: Fluffy biscuits with a buttery glaze. Price: $4.00" />
+        </div>
+      </article>
+
+      <!-- Buffalo Wild Wings -->
+      <article class="establishment">
+        <header>
+          <h2>Buffalo Wild Wings</h2>
+          <p><strong>Location & Hours:</strong> EUC | 7:00 AM – 5:00 PM</p>
+        </header>
+        <p>Buffalo Wild Wings serves up a variety of wings and hearty sides, offering bold, classic flavors that pack a punch.</p>
+        <div class="dishes">
+          <img src="/DineOnCampus/images/ClassicBuffaloWings.jpeg" alt="Classic Buffalo Wings"
+               class="dish-image" 
+               data-dish="Classic Buffalo Wings" 
+               data-cost="9.00" 
+               data-description="Classic Buffalo Wings: Crispy wings in a tangy buffalo sauce. Price: $9.00" />
+          <img src="/DineOnCampus/images/BonelessWings.jpeg" alt="Boneless Wings"
+               class="dish-image" 
+               data-dish="Boneless Wings" 
+               data-cost="8.50" 
+               data-description="Boneless Wings: Tender boneless wings tossed in your choice of sauce. Price: $8.50" />
+          <img src="/DineOnCampus/images/LoadedNachos.jpeg" alt="Loaded Nachos"
+               class="dish-image" 
+               data-dish="Loaded Nachos" 
+               data-cost="7.50" 
+               data-description="Loaded Nachos: Tortilla chips with melted cheese, jalapeños, and sour cream. Price: $7.50" />
+        </div>
+      </article>
+
+      <!-- Happy Bowl -->
+      <article class="establishment">
+        <header>
+          <h2>Happy Bowl</h2>
+          <p><strong>Location & Hours:</strong> Spartan Village | 11:00 AM – 9:30 PM</p>
+        </header>
+        <p>Happy Bowl offers a fresh and healthy take on campus dining with a variety of nutritious bowls that are as colorful as they are delicious.</p>
+        <div class="dishes">
+          <img src="/DineOnCampus/images/GreenPowerBowl.jpeg" alt="Green Power Bowl"
+               class="dish-image" 
+               data-dish="Green Power Bowl" 
+               data-cost="10.00" 
+               data-description="Green Power Bowl: A refreshing mix of greens, avocado, quinoa, and a zesty dressing. Price: $10.00" />
+          <img src="/DineOnCampus/images/ProteinPackedBowl.jpeg" alt="Protein-Packed Bowl"
+               class="dish-image" 
+               data-dish="Protein-Packed Bowl" 
+               data-cost="11.00" 
+               data-description="Protein-Packed Bowl: Grilled chicken, black beans, and fresh veggies on a bed of rice. Price: $11.00" />
+          <img src="/DineOnCampus/images/VeggieDelightBowl.jpeg" alt="Veggie Delight Bowl"
+               class="dish-image" 
+               data-dish="Veggie Delight Bowl" 
+               data-cost="9.50" 
+               data-description="Veggie Delight Bowl: A medley of seasonal vegetables with a light vinaigrette. Price: $9.50" />
+        </div>
+      </article>
+    </section>
+
+    <!-- Dish Description Section -->
+    <aside id="dish-description-container">
+      <!-- Dish details will be dynamically inserted here by main.js -->
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ShakaOmbongi</p>
+  </footer>
+
+  <!-- MDB JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <!-- External JavaScript for Dish Image Handling -->
+  <script src="/DineOnCampus/js/function.js"></script>
+</body>
+</html>

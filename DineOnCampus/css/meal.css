@@ -1,0 +1,49 @@
+/**
+ * Author: Shaka Ombongi 2/18
+ * Description: CSS for the Meal Plan page of Campus Culinary Delights.
+ */
+
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.mealplan-container h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.75em 1em;
+  font-size: 1.1em;
+}
+
+#meal-plan-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.button-group {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.button-group button {
+  margin: 0 2px;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+}
+
+#total-cost {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 1em;
+}

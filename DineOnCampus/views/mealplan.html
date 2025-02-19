@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Author: Shaka Ombongi 2/18
+    Description: This Meal Plan page lets users add recommended dishes to a meal plan,
+    adjust quantities with + and - buttons, and view the total cost.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meal Plan - Campus Culinary Delights</title>
+  <!-- MDB UI Kit CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <!-- External CSS for Meal Plan -->
+  <link rel="stylesheet" href="/DineOnCampus/css/meal.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Campus Food Recommendations</a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Meal Plan</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="mealplan-container container my-5">
+    <section id="dish-selection">
+      <h2>Select Your Dishes</h2>
+      <ul id="dish-list" class="list-group">
+        <!-- Chickfla Dishes -->
+        <li class="list-group-item" data-dish="Crispy Chicken Sandwich" data-cost="8.50">
+          Crispy Chicken Sandwich - $8.50
+        </li>
+        <li class="list-group-item" data-dish="Spicy Chicken Wings" data-cost="7.00">
+          Spicy Chicken Wings - $7.00
+        </li>
+        <li class="list-group-item" data-dish="Buttermilk Biscuits" data-cost="4.00">
+          Buttermilk Biscuits - $4.00
+        </li>
+        <!-- Buffalo Wild Wings Dishes -->
+        <li class="list-group-item" data-dish="Classic Buffalo Wings" data-cost="9.00">
+          Classic Buffalo Wings - $9.00
+        </li>
+        <li class="list-group-item" data-dish="Boneless Wings" data-cost="8.50">
+          Boneless Wings - $8.50
+        </li>
+        <li class="list-group-item" data-dish="Loaded Nachos" data-cost="7.50">
+          Loaded Nachos - $7.50
+        </li>
+        <!-- Happy Bowl Dishes -->
+        <li class="list-group-item" data-dish="Green Power Bowl" data-cost="10.00">
+          Green Power Bowl - $10.00
+        </li>
+        <li class="list-group-item" data-dish="Protein-Packed Bowl" data-cost="11.00">
+          Protein-Packed Bowl - $11.00
+        </li>
+        <li class="list-group-item" data-dish="Veggie Delight Bowl" data-cost="9.50">
+          Veggie Delight Bowl - $9.50
+        </li>
+      </ul>
+    </section>
+
+    <section id="meal-plan">
+      <h2>Your Meal Plan</h2>
+      <ul id="meal-plan-list" class="list-group mb-3">
+        <!-- Selected dishes will appear here dynamically -->
+      </ul>
+      <div id="total-cost">
+        Total Cost: $<span id="cost-amount">0.00</span>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 ShakaOmbongi</p>
+    </div>
+  </footer>
+  
+  <!-- MDB JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <!-- External JavaScript for Meal Plan -->
+  <script src="/DineOnCampus/js/meal.js"></script>
+</body>
+</html>

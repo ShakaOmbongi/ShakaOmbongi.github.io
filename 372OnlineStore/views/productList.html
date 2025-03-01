@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Douillet Lounge Wear - Products</title>
-  <!-- Bootstrap -->
+  <!-- Bootstrap / MDB UI Kit -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
-  <!-- style CSS -->
-  <link rel="stylesheet" href="/372OnlineStore/style.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/372OnlineStore/assets/css/style.css" />
 </head>
 <body>
   <!-- Header with Nav -->
@@ -16,7 +16,7 @@
       <div class="container">
         <a class="navbar-brand" href="/372OnlineStore/views/index.html">Douillet Lounge Wear</a>
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,7 +28,7 @@
               <a class="nav-link active" href="/372OnlineStore/views/productList.html">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cart</a>
+              <a class="nav-link" href="/372OnlineStore/views/cart.html">Cart (<span id="cart-count">0</span>)</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
@@ -44,7 +44,7 @@
     <div class="container">
       <h2 class="mb-4 text-center">Our Products</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Sweatpants -->
+        <!-- Example Product Card: Cozy Sweatpants -->
         <div class="col">
           <div class="card h-100">
             <img src="/372OnlineStore/images/sweatpants.jpeg" class="card-img-top" alt="Cozy Sweatpants">
@@ -55,18 +55,17 @@
             </div>
           </div>
         </div>
-        <!-- Hoodie -->
+        <!-- Additional product cards (e.g., Hoodie, T-Shirt, Pants) -->
         <div class="col">
           <div class="card h-100">
             <img src="/372OnlineStore/images/hoodie.jpeg" class="card-img-top" alt="Relaxed Hoodie">
             <div class="card-body text-center">
               <h5 class="card-title">Relaxed Hoodie</h5>
               <p class="card-text">$49.99</p>
-              <a href="productDetails.html" class="btn btn-primary">View Details</a>
+              <a href="/372OnlineStore/views/productDetails.html" class="btn btn-primary">View Details</a>
             </div>
           </div>
         </div>
-        <!-- T-Shirt -->
         <div class="col">
           <div class="card h-100">
             <img src="/372OnlineStore/images/t-shirt.jpeg" class="card-img-top" alt="Comfortable T-Shirt">
@@ -77,17 +76,7 @@
             </div>
           </div>
         </div>
-        <!-- Pants -->
-        <div class="col">
-          <div class="card h-100">
-            <img src="/372OnlineStore/images/pants.jpeg" class="card-img-top" alt="Soft Lounge Pants">
-            <div class="card-body text-center">
-              <h5 class="card-title">Soft Lounge Pants</h5>
-              <p class="card-text">$44.99</p>
-              <a href="/372OnlineStore/views/productDetails.html" class="btn btn-primary">View Details</a>
-            </div>
-          </div>
-        </div>
+        <!-- More cards can be added as needed -->
       </div>
     </div>
   </main>
@@ -99,7 +88,7 @@
     </div>
   </footer>
 
-  <!-- function JS -->
+  <!-- Custom JS -->
   <script src="/372OnlineStore/function.js"></script>
 </body>
 </html>

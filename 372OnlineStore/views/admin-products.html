@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin - Manage Products</title>
+  <link rel="stylesheet" href="/372OnlineStore/assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/admin/upload.html">Bulk Upload</a></li>
+        <li><a href="/admin/products.html">Product Listing</a></li>
+        <li><a href="#">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Admin Product Listing</h1>
+    <button class="btn" onclick="location.href='/admin/edit.html'">Add New Product</button>
+    <table border="1" width="100%" cellpadding="10">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Image Path</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example product row -->
+        <tr>
+          <td>1</td>
+          <td>Cozy Sweatpants</td>
+          <td>Perfect for lounging</td>
+          <td>Apparel</td>
+          <td>/images/sweatpants.jpeg</td>
+          <td>$39.99</td>
+          <td>
+            <a href="/admin/edit.html?id=1">Edit</a>
+            <button class="btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Online Store Admin</p>
+  </footer>
+</body>
+</html>

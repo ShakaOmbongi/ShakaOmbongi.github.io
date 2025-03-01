@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Douillet Lounge Wear - Product Details</title>
-  <!--Bootstrap -->
+  <!-- Bootstrap / MDB UI Kit -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
-  <!-- style CSS -->
-  <link rel="stylesheet" href="/372OnlineStore/style.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/372OnlineStore/assets/css/style.css" />
 </head>
 <body>
   <!-- Header with Nav -->
@@ -16,7 +16,7 @@
       <div class="container">
         <a class="navbar-brand" href="/372OnlineStore/views/index.html">Douillet Lounge Wear</a>
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,7 +28,7 @@
               <a class="nav-link" href="/372OnlineStore/views/productList.html">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cart</a>
+              <a class="nav-link" href="/372OnlineStore/views/cart.html">Cart (<span id="cart-count">0</span>)</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
@@ -58,7 +58,8 @@
             <li><strong>Material:</strong> 100% Cotton</li>
             <li><strong>Available Sizes:</strong> S, M, L, XL</li>
           </ul>
-          <button type="button" class="btn btn-primary btn-lg mt-3">Add to Cart</button>
+          <!-- Updated button with specific class -->
+          <button type="button" class="btn btn-primary btn-lg mt-3 btn-add-to-cart">Add to Cart</button>
         </div>
       </div>
     </div>

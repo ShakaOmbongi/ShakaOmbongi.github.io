@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+  Name: Shaka Ombongi
+  Date: 2025-02-28
+  CSC 372-01
+  Static Admin Product Edit Page
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - Edit Product</title>
+
+  <!-- Bootstrap / MDB UI Kit -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static372OnlineStore/assets/css/admin.css">
+</head>
+<body>
+  <!-- Admin Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/static372OnlineStore/views/admin-products.html">Admin Panel</a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#adminNav">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="adminNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/admin-upload.html">Bulk Upload</a></li>
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/admin-products.html">Product Listing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <h2 class="mb-4 text-center">Edit Product</h2>
+
+    <div class="card shadow p-4">
+      <form>
+        <!-- Product ID (Read-Only) -->
+        <div class="mb-3">
+          <label class="form-label">Product ID (Not Editable):</label>
+          <input type="text" class="form-control" value="1" readonly>
+        </div>
+
+        <!-- Product Name -->
+        <div class="mb-3">
+          <label class="form-label">Name:</label>
+          <input type="text" class="form-control" value="Cozy Sweatpants">
+        </div>
+
+        <!-- Product Description -->
+        <div class="mb-3">
+          <label class="form-label">Description:</label>
+          <textarea class="form-control" rows="3">Perfect for lounging</textarea>
+        </div>
+
+        <!-- Category -->
+        <div class="mb-3">
+          <label class="form-label">Category:</label>
+          <select class="form-select">
+            <option selected>Apparel</option>
+            <option>Hoodies</option>
+            <option>T-Shirts</option>
+            <option>Pants</option>
+            <option>Accessories</option>
+          </select>
+        </div>
+
+        <!-- Image Path -->
+        <div class="mb-3">
+          <label class="form-label">Image Path:</label>
+          <input type="text" class="form-control" value="/static372OnlineStore/assets/images/sweatpants.jpeg">
+        </div>
+
+        <!-- Price -->
+        <div class="mb-3">
+          <label class="form-label">Price ($):</label>
+          <input type="number" class="form-control" step="0.01" value="39.99">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-between">
+          <a href="/static372OnlineStore/views/admin-products.html" class="btn btn-secondary btn-lg">Cancel</a>
+          <button type="submit" class="btn btn-primary btn-lg">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Admin Panel</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+</body>
+</html>

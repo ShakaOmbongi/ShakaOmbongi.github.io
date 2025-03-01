@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Shaka Ombongi
+  Date: 2025-02-28
+  CSC 372-01
+  Admin Product Edit Page
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edit Product - Admin</title>
+
+  <!-- Bootstrap / MDB UI Kit -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static372OnlineStore/assets/css/admin.css" />
+</head>
+<body>
+  <!-- Admin Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/static372OnlineStore/views/admin-products.html">Admin Panel</a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#adminNav">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="adminNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/admin-upload.html">Bulk Upload</a></li>
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/admin-products.html">Product Listing</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/static372OnlineStore/views/admin-product-edit.html">Edit Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <h2 class="mb-4 text-center">Edit Product</h2>
+
+    <div class="card shadow-lg p-4">
+      <form id="editProductForm">
+        <!-- Product ID (Read-Only) -->
+        <div class="mb-3">
+          <label for="productId" class="form-label">Product ID:</label>
+          <input type="text" id="productId" name="productId" class="form-control" readonly />
+        </div>
+
+        <!-- Product Name -->
+        <div class="mb-3">
+          <label for="productName" class="form-label">Product Name:</label>
+          <input type="text" id="productName" name="productName" class="form-control" required />
+        </div>
+
+        <!-- Product Description -->
+        <div class="mb-3">
+          <label for="productDescription" class="form-label">Description:</label>
+          <textarea id="productDescription" name="productDescription" class="form-control" rows="3" required></textarea>
+        </div>
+
+        <!-- Category -->
+        <div class="mb-3">
+          <label for="productCategory" class="form-label">Category:</label>
+          <select id="productCategory" name="productCategory" class="form-select" required>
+            <option selected disabled>Select Category</option>
+            <option>Apparel</option>
+            <option>Hoodies</option>
+            <option>T-Shirts</option>
+            <option>Pants</option>
+            <option>Accessories</option>
+          </select>
+        </div>
+
+        <!-- Price -->
+        <div class="mb-3">
+          <label for="productPrice" class="form-label">Price ($):</label>
+          <input type="number" id="productPrice" name="productPrice" class="form-control" step="0.01" required />
+        </div>
+
+        <!-- Image Path -->
+        <div class="mb-3">
+          <label for="productImage" class="form-label">Image URL:</label>
+          <input type="text" id="productImage" name="productImage" class="form-control" required />
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-between">
+          <a href="/static372OnlineStore/views/admin-products.html" class="btn btn-secondary btn-lg">Back to Products</a>
+          <button type="submit" class="btn btn-primary btn-lg">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Douillet Lounge Wear Admin</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <script src="/static372OnlineStore/assets/js/adminEdit.js"></script>
+</body>
+</html>

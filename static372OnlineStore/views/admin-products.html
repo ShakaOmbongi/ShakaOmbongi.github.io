@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Shaka Ombongi
+  Date: 2025-02-28
+  CSC 372-01
+  Admin Product Listing Page
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin - Manage Products</title>
+
+  <!-- Bootstrap / MDB UI Kit -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static372OnlineStore/assets/css/admin.css" />
+</head>
+<body>
+  <!-- Admin Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/static372OnlineStore/admin-products.html">Admin Panel</a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#adminNav">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="adminNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/admin-upload.html">Bulk Upload</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/static372OnlineStore/views/admin-products.html">Product Listing</a></li>
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/admin-product-edit.html">Edit Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <h2 class="mb-4 text-center">Admin Product Listing</h2>
+
+    <!-- Add New Product Button -->
+    <div class="text-end mb-3">
+      <a href="/static372OnlineStore/views/admin-product-edit.html" class="btn btn-success btn-lg">Add New Product</a>
+    </div>
+
+    <!-- Product Table -->
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+          <!-- Products will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <!-- customer Button -->
+  <section class="text-center my-5">
+    <a href="index.html" class="btn btn-danger btn-lg">customer</a>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Douillet Lounge Wear Admin</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <script src="/static372OnlineStore/assets/js/adminProducts.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+  Name: Shaka Ombongi
+  Date: 2025-02-28
+  CSC 372-01
+  Static Order History Page
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Douillet Lounge Wear - Order History</title>
+
+  <!-- Bootstrap / MDB UI Kit -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static372OnlineStore/assets/css/style.css" />
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/static372OnlineStore/index.html">
+          <img src="/static372OnlineStore/assets/images/logo.jpg" alt="Douillet Lounge Wear" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/productList.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="/static372OnlineStore/views/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/static372OnlineStore/views/order-history.html">Order History</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Order History</h2>
+
+      <!-- Order List -->
+      <div class="row">
+        <!-- Order #1 -->
+        <div class="col-md-6">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Order #12345</h5>
+              <p class="text-muted">Date: 2025-02-01</p>
+              <p><strong>Total:</strong> $47.69</p>
+              <button class="btn btn-outline-primary">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order #2 -->
+        <div class="col-md-6">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Order #12346</h5>
+              <p class="text-muted">Date: 2025-01-15</p>
+              <p><strong>Total:</strong> $99.99</p>
+              <button class="btn btn-outline-primary">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order #3 -->
+        <div class="col-md-6">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Order #12347</h5>
+              <p class="text-muted">Date: 2025-01-05</p>
+              <p><strong>Total:</strong> $75.50</p>
+              <button class="btn btn-outline-primary">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 mt-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Douillet Lounge Wear. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+</body>
+</html>

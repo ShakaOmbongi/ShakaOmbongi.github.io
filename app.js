@@ -1,37 +1,60 @@
-const express = require('express');
 const path = require('path');
+const express = require('express');
 const app = express();
 
-// Load environment variables if needed (make sure to require dotenv in your config if using .env)
-// require('dotenv').config();
+// Middleware for parsing JSON & URL-encoded data
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-// Import the database configuration
-const sequelize = require('./372OnlineStore/config/database');
+// Serve static assets (CSS, JS, images)
+app.use('/assets', express.static(path.join(__dirname, '372OnlineStore', 'assets')));
 
-// Import routes using the correct relative paths
+// Define Routes for Public View Pages
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'index.html'));
+});
+
+app.get('/products', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'productList.html'));
+});
+
+app.get('/cart', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'cart.html'));
+});
+
+app.get('/orders', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'order-history.html'));
+});
+
+app.get('/products/details', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'productDetails.html'));
+});
+
+// Admin Pages (Not for Public View)
+app.get('/admin/upload', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'admin-upload.html'));
+});
+
+app.get('/admin/products', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'admin-products.html'));
+});
+
+app.get('/admin/edit-product', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'product-edit.html'));
+});
+
+//  Import API Routes (For Future Backend Functionality)
 const shopRoutes = require('./372OnlineStore/routes/shop');
 const adminRoutes = require('./372OnlineStore/routes/admin');
 const cartRoutes = require('./372OnlineStore/routes/cart');
 const orderRoutes = require('./372OnlineStore/routes/order');
 
-// Parse URL-encoded bodies and JSON
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-// Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Use the routes
-app.use('/', shopRoutes);
+// Use API Routes
+app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
 app.use('/cart', cartRoutes);
-app.use('/order', orderRoutes);
+app.use('/orders', orderRoutes);
 
-// Sync the database and start the server
-sequelize
-  .sync()
-  .then(() => {
-    const port = process.env.PORT || 3000;
-    app.listen(port, () => console.log(`Server running on port ${port}`));
-  })
-  .catch((err) => console.error("Database sync error:", err));
+// Start the Server
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));

@@ -1,9 +1,10 @@
-<!--
-  Name: shaka ombongi
-  Date: 2025.02.05
-  CSC 372-01
--->
 <!DOCTYPE html>
+<!--
+  Name: shaka ombonig
+  Date: 2025-02-28
+  CSC 372-01
+  landing page
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,8 +14,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/372OnlineStore/assets/css/style.css" />
-  <!-- Google Maps API (replace YOUR_API_KEY with your actual key) -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <!-- Google Maps API with Correct Loading Method -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_REAL_API_KEY&callback=initMap"></script>
 </head>
 <body>
   <!-- Header with Navigation -->
@@ -29,19 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="/372OnlineStore/views/index.html">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/372OnlineStore/views/productList.html">Products</a>
+              <a class="nav-link" href="/products">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/372OnlineStore/views/cart.html">Cart (<span id="cart-count">0</span>)</a>
+              <a class="nav-link" href="/cart">Cart (<span id="cart-count">0</span>)</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
             </li>
           </ul>
         </div>
@@ -60,7 +58,7 @@
           Discover our cozy, stylish loungewear perfect for relaxing at home or on the go.
           Enjoy premium fabrics and modern designs made to help you feel your best.
         </p>
-        <a href="/372OnlineStore/views/productList.html" class="btn btn-primary btn-lg mb-3">Shop Now</a>
+        <a href="/products" class="btn btn-primary btn-lg mb-3">Shop Now</a>
       </div>
     </section>
 
@@ -92,21 +90,8 @@
   </footer>
 
   <!-- Custom JS -->
-  <script src="/372OnlineStore/function.js"></script>
-  <script>
-    // Initialize Google Map
-    function initMap() {
-      const storeLocation = { lat: 40.7128, lng: -74.0060 }; // Example: New York City
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: storeLocation,
-      });
-      new google.maps.Marker({
-        position: storeLocation,
-        map: map,
-      });
-    }
-    window.onload = initMap;
-  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQs1diFf7bdgqn4rqciUnEg4HXOQivBRk&callback=initMap"></script>
+
+  <script src="/372OnlineStore/assets/js/function.js"></script>
 </body>
 </html>

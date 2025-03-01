@@ -1,5 +1,3 @@
-// In a full implementation, you would manage cart items (possibly with a join table)
-// For this prototype, we serve static HTML and log actions
 
 exports.getCart = (req, res) => {
     res.sendFile(__dirname + '/../views/cart.html');

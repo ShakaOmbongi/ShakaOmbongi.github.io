@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+  Name: shaka ombongi
+  Date: 2025-02-28
+  CSC 372-01
+ product details Page
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,14 +13,14 @@
   <!-- Bootstrap / MDB UI Kit -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/372OnlineStore/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
   <!-- Header with Nav -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/372OnlineStore/views/index.html">Douillet Lounge Wear</a>
+        <a class="navbar-brand" href="/">Douillet Lounge Wear</a>
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
@@ -22,13 +28,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/372OnlineStore/views/index.html">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/372OnlineStore/views/productList.html">Products</a>
+              <a class="nav-link" href="/products">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/372OnlineStore/views/cart.html">Cart (<span id="cart-count">0</span>)</a>
+              <a class="nav-link" href="/cart">Cart (<span id="cart-count">0</span>)</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
@@ -45,17 +51,15 @@
       <div class="row">
         <!-- Product Image -->
         <div class="col-md-6 mb-4">
-          <img src="/372OnlineStore/images/sweatpants.jpeg" class="img-fluid rounded" alt="Cozy Sweatpants">
+          <img id="product-image" class="img-fluid rounded" alt="Product Image">
         </div>
         <!-- Product Details -->
         <div class="col-md-6">
-          <h2 class="mb-3">Cozy Sweatpants</h2>
-          <p class="h4 text-primary mb-4">$39.99</p>
-          <p>
-            These cozy sweatpants are designed for maximum comfort and a relaxed look. Perfect for lounging at home or casual outings.
-          </p>
+          <h2 id="product-name" class="mb-3"></h2>
+          <p id="product-price" class="h4 text-primary mb-4"></p>
+          <p id="product-description"></p>
           <ul class="list-unstyled">
-            <li><strong>Material:</strong> 100% Cotton</li>
+            <li><strong>Material:</strong> <span id="product-material"></span></li>
             <li><strong>Available Sizes:</strong> S, M, L, XL</li>
           </ul>
           <!-- Updated button with specific class -->
@@ -73,6 +77,6 @@
   </footer>
 
   <!-- Custom JS -->
-  <script src="/372OnlineStore/function.js"></script>
+  <script src="/assets/js/productDetails.js"></script>
 </body>
 </html>

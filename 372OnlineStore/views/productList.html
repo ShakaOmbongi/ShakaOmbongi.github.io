@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+  Name: shaka ombongi
+  Date: 2025-02-28
+  CSC 372-01
+  productlist  Page
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,32 +13,24 @@
   <!-- Bootstrap / MDB UI Kit -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/372OnlineStore/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
   <!-- Header with Nav -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/372OnlineStore/views/index.html">Douillet Lounge Wear</a>
+        <a class="navbar-brand" href="/">Douillet Lounge Wear</a>
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/372OnlineStore/views/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/372OnlineStore/views/productList.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/372OnlineStore/views/cart.html">Cart (<span id="cart-count">0</span>)</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign In</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cart">Cart (<span id="cart-count">0</span>)</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
           </ul>
         </div>
       </div>
@@ -44,39 +42,82 @@
     <div class="container">
       <h2 class="mb-4 text-center">Our Products</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Example Product Card: Cozy Sweatpants -->
+        <!-- Sweatpants -->
         <div class="col">
           <div class="card h-100">
-            <img src="/372OnlineStore/images/sweatpants.jpeg" class="card-img-top" alt="Cozy Sweatpants">
+            <img src="/assets/images/sweatpants.jpeg" class="card-img-top" alt="Cozy Sweatpants">
             <div class="card-body text-center">
               <h5 class="card-title">Cozy Sweatpants</h5>
               <p class="card-text">$39.99</p>
-              <a href="/372OnlineStore/views/productDetails.html" class="btn btn-primary">View Details</a>
+              <button class="btn btn-primary view-product"
+                data-name="Cozy Sweatpants"
+                data-price="39.99"
+                data-image="/assets/images/sweatpants.jpeg"
+                data-description="Perfect for lounging and casual wear."
+                data-material="100% Cotton">
+                View Details
+              </button>
             </div>
           </div>
         </div>
-        <!-- Additional product cards (e.g., Hoodie, T-Shirt, Pants) -->
+        
+        <!-- Hoodie -->
         <div class="col">
           <div class="card h-100">
-            <img src="/372OnlineStore/images/hoodie.jpeg" class="card-img-top" alt="Relaxed Hoodie">
+            <img src="/assets/images/hoodie.jpeg" class="card-img-top" alt="Relaxed Hoodie">
             <div class="card-body text-center">
               <h5 class="card-title">Relaxed Hoodie</h5>
               <p class="card-text">$49.99</p>
-              <a href="/372OnlineStore/views/productDetails.html" class="btn btn-primary">View Details</a>
+              <button class="btn btn-primary view-product"
+                data-name="Relaxed Hoodie"
+                data-price="49.99"
+                data-image="/assets/images/hoodie.jpeg"
+                data-description="Stay warm and stylish with this relaxed hoodie."
+                data-material="Cotton Blend">
+                View Details
+              </button>
             </div>
           </div>
         </div>
+
+        <!-- T-Shirt -->
         <div class="col">
           <div class="card h-100">
-            <img src="/372OnlineStore/images/t-shirt.jpeg" class="card-img-top" alt="Comfortable T-Shirt">
+            <img src="/assets/images/t-shirt.jpeg" class="card-img-top" alt="Comfortable T-Shirt">
             <div class="card-body text-center">
               <h5 class="card-title">Comfortable T-Shirt</h5>
               <p class="card-text">$29.99</p>
-              <a href="/372OnlineStore/views/productDetails.html" class="btn btn-primary">View Details</a>
+              <button class="btn btn-primary view-product"
+                data-name="Comfortable T-Shirt"
+                data-price="29.99"
+                data-image="/assets/images/t-shirt.jpeg"
+                data-description="Soft and breathable t-shirt for everyday wear."
+                data-material="100% Organic Cotton">
+                View Details
+              </button>
             </div>
           </div>
         </div>
-        <!-- More cards can be added as needed -->
+
+        <!-- Soft Lounge Pants  -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="/assets/images/pants.jpeg" class="card-img-top" alt="Soft Lounge Pants">
+            <div class="card-body text-center">
+              <h5 class="card-title">Soft Lounge Pants</h5>
+              <p class="card-text">$44.99</p>
+              <button class="btn btn-primary view-product"
+                data-name="Soft Lounge Pants"
+                data-price="44.99"
+                data-image="/assets/images/pants.jpeg"
+                data-description="Ultimate comfort lounge pants for home and casual outings."
+                data-material="Soft Fleece">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>
@@ -89,6 +130,6 @@
   </footer>
 
   <!-- Custom JS -->
-  <script src="/372OnlineStore/function.js"></script>
+  <script src="/assets/js/productList.js"></script>
 </body>
 </html>

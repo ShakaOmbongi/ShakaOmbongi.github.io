@@ -43,6 +43,15 @@ app.get('/admin/edit-product', (req, res) => {
   res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'product-edit.html'));
 });
 
+app.get('/admin/edit', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'admin-edit.html'));
+});
+
+app.get('/products/details', (req, res) => {
+  res.sendFile(path.join(__dirname, '372OnlineStore', 'views', 'productDetails.html'));
+});
+
+
 //  Import API Routes (For Future Backend Functionality)
 const shopRoutes = require('./372OnlineStore/routes/shop');
 const adminRoutes = require('./372OnlineStore/routes/admin');

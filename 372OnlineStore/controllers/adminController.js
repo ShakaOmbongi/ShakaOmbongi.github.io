@@ -5,6 +5,7 @@ exports.uploadProducts = (req, res) => {
   console.log("Uploading products bulk file");
   // For now, just redirect back to the admin page
   res.redirect('/admin/products');
+  
 };
 
 exports.editProduct = async (req, res) => {

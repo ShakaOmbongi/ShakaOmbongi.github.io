@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("selectedProduct", JSON.stringify(product));
 
             // Redirect to Product Details page
-            window.location.href = "/productDetails";
+            window.location.href = "/products/details";
         });
     });
 });

@@ -1,0 +1,105 @@
+/* Global Reset
+
+  Name: shaka ombongi
+  Date: 2025-03-07
+  CSC 372-01
+  style page for the styles of the RockPaperScissors game
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Container */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  /* Choice Image Styles */
+  .choice {
+    width: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, border 0.2s ease;
+  }
+  
+  /* Highlight selected player choice */
+  .selected {
+    border: 2px solid #007bff;
+  }
+  
+  /* Outcome Text */
+  #outcome-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Score Section Styles */
+  #score-section {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 15px;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  
+  #score-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  #score-section p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  /* Footer Styles */
+  footer {
+    margin-top: 20px;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+   

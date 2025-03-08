@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+  Name: shaka ombongi
+  Date: 2025-03-07
+  CSC 372-01
+  landing page
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="/RockPaperScissors/assests/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <main>
+    <!-- Player Section -->
+    <section id="player-section">
+      <h2>Your Throw</h2>
+      <div id="player-choices">
+        <img src="/RockPaperScissors/assests/img/rock.png" alt="Rock" class="choice" id="rock">
+        <img src="/RockPaperScissors/assests/img/paper.png" alt="Paper" class="choice" id="paper">
+        <img src="/RockPaperScissors/assests/img/scissors.png" alt="Scissors" class="choice" id="scissors">
+      </div>
+    </section>
+
+    <!-- Computer Section -->
+    <section id="computer-section">
+      <h2>Computer's Throw</h2>
+      <img src="/RockPaperScissors/assests/img/question-mark.png" alt="Question Mark" id="computer-choice">
+    </section>
+
+    <!-- Outcome Section -->
+    <section id="outcome-section">
+      <h2>Outcome</h2>
+      <p id="outcome-text">Waiting for your throw...</p>
+    </section>
+
+    <!-- Score Section (Extra Credit) -->
+    <section id="score-section">
+      <h2>Score</h2>
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+      <p>Ties: <span id="ties">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <button id="reset-button">Reset</button>
+  </footer>
+
+  <script src="/RockPaperScissors/assests/function.js"></script>
+</body>
+</html>

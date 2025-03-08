@@ -1,0 +1,31 @@
+/* mainstyle.css this is for the main index for https://shakaombongi.github.io/ */
+
+/* Quick Styling */
+body {
+    background-color: #f7f7f7;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    /* Adjusted background path relative to the CSS file location */
+    background: url('../images/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  /* Darken the hero image */
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px 0;
+  }
+  
+  /* Hover Effect for Project Cards */
+  .project-card {
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
